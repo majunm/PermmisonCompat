@@ -12,9 +12,9 @@ activity中
                 System.out.println("==============权限被拒绝了==============");
             }
 
-            // 还未添加功能
+            // 跳转settings吧
             @Override
-            public void other(int cmds) {
+            public void goSettings(int cmds) {
                 System.out.println("==============请去setting界面==============");
             }
         });
@@ -32,9 +32,9 @@ PermissionCompat.tryReqs(getActivity(), new PermissionCompat.PerCompatCallbackAd
                 System.out.println("==============权限被拒绝了==============");
             }
 
-            // 还未添加功能
+            // 跳转settings吧
             @Override
-            public void other(int cmds) {
+            public void goSettings(int cmds) {
                 System.out.println("==============请去setting界面==============");
             }
         });

@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
             // 还未添加功能
             @Override
-            public void other(int cmds) {
+            public void goSettings(int cmds) {
                 System.out.println("==============请去setting界面==============");
             }
         });
