@@ -157,6 +157,7 @@ package kaiqi.cn.permission;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 
 /**
@@ -182,10 +183,17 @@ public class ShadowFragment extends Fragment {
             if (PermissionCompat.hasAllPermissionsGranted(grantResults)) {
                 mPermissionCompatCallback.ok(PermissionCompat.PASS);
             } else {
-                mPermissionCompatCallback.refuse(PermissionCompat.DEATH_REFUSAL);
+                for (String permission : permissions) { //拒绝,并且不在询问
+                    if (!ActivityCompat.shouldShowRequestPermissionRationale(getActivity(), permission)) {
+                        mPermissionCompatCallback.goSettings(PermissionCompat.DEATH_REFUSAL);
+                        return;
+                    }
+                }
+                mPermissionCompatCallback.refuse(PermissionCompat.NORMAL_REFUSAL);
             }
         }
     }
 }
+
 
 ```
