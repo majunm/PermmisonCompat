@@ -1,3 +1,5 @@
+[简书地址](https://www.jianshu.com/p/7bdbba785a2a)
+
 activity中
 ```
   PermissionCompat.tryReqs(this, new PermissionCompat.PerCompatCallbackAdpt() {
