@@ -1,8 +1,10 @@
 package kaiqi.cn.permmisoncompat;
 
+import android.Manifest;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import kaiqi.cn.httpx.R;
 import kaiqi.cn.permission.PermissionCompat;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,6 +28,6 @@ public class MainActivity extends AppCompatActivity {
             public void goSettings(int cmds) {
                 System.out.println("==============请去setting界面==============");
             }
-        });
+        }, Manifest.permission.WRITE_EXTERNAL_STORAGE);
     }
 }
