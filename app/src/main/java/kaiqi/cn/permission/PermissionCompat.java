@@ -16,11 +16,11 @@ import java.util.List;
 public class PermissionCompat {
     public static final int CODE = 200;
     /**
-     * 拒绝,不在
+     * 拒绝,不在询问,死了这条心吧~
      */
     public static final int DEATH_REFUSAL = 250;
     /**
-     * 拒绝
+     * 一般拒绝,还有机会
      */
     public static final int NORMAL_REFUSAL = 251;
     /**

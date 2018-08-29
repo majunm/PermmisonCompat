@@ -28,6 +28,6 @@ public class MainActivity extends AppCompatActivity {
             public void goSettings(int cmds) {
                 System.out.println("==============请去setting界面==============");
             }
-        }, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        }, Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.READ_PHONE_STATE,Manifest.permission.CAMERA);
     }
 }
