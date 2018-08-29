@@ -106,7 +106,7 @@ public class PermissionCompat {
 
     /**
      */
-    public static void tryReqs(AppCompatActivity act, PerCompatCallbackAdpt mPermissionCompatCallback, String... cmds) {
+    public static void tryReqs(FragmentActivity act, PerCompatCallbackAdpt mPermissionCompatCallback, String... cmds) {
 
         if (cmds != null && cmds.length > 0) {
             List<String> mCmdLists = new ArrayList<>();
