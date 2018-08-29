@@ -1,6 +1,7 @@
 package kaiqi.cn.permission;
 
 import android.content.pm.PackageManager;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -59,7 +60,7 @@ public class PermissionCompat {
 
     /**
      */
-    public static void tryReqs(AppCompatActivity act, PerCompatCallbackAdpt mPermissionCompatCallback, String... cmds) {
+    public static void tryReqs(FragmentActivity act, PerCompatCallbackAdpt mPermissionCompatCallback, String... cmds) {
 
         if (cmds != null && cmds.length > 0) {
             List<String> mCmdLists = new ArrayList<>();
