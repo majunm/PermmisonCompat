@@ -1,9 +1,9 @@
 [简书地址](https://www.jianshu.com/p/7bdbba785a2a)
 
-###### 查看rxpermission源码可知,核心代码是创建一个无ui的fragment,fragment是可感知activity生命周期的,这个时候,解决方案可不是跃然纸上了吗,不熟rxjava怎么办,在下封装了个简易代码,仅供参考~
+> 查看rxpermission源码可知,核心代码是创建一个无ui的fragment,fragment是可感知activity生命周期的,这个时候,解决方案可不是跃然纸上了吗,不熟rxjava怎么办,在下封装了个简易代码,仅供参考~
 
-activity中
-```
+### activity中
+```java
   PermissionCompat.tryReqs(this, new PermissionCompat.PerCompatCallbackAdpt() {
             @Override
             public void ok(int cmds) {
@@ -22,8 +22,8 @@ activity中
         });
 ```
 
-fragment中
-```
+### fragment中
+```java
 PermissionCompat.tryReqs(getActivity(), new PermissionCompat.PerCompatCallbackAdpt() {
             @Override
             public void ok(int cmds) {
@@ -46,7 +46,7 @@ PermissionCompat.tryReqs(getActivity(), new PermissionCompat.PerCompatCallbackAd
 
 ### 核心代码
 
-```
+```java
 package kaiqi.cn.permission;
 
 import android.content.pm.PackageManager;
@@ -154,7 +154,7 @@ public class PermissionCompat {
 ```
 
 
-```
+```java
 package kaiqi.cn.permission;
 
 import android.os.Bundle;
