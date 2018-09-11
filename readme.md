@@ -19,7 +19,7 @@
             public void goSettings(int cmds) {
                 System.out.println("==============请去setting界面==============");
             }
-        });
+        }, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 ```
 
 ### fragment中
@@ -39,7 +39,7 @@ PermissionCompat.tryReqs(getActivity(), new PermissionCompat.PerCompatCallbackAd
             public void goSettings(int cmds) {
                 System.out.println("==============请去setting界面==============");
             }
-        });
+        }, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 ```
 
 
