@@ -18,6 +18,7 @@
             @Override
             public void goSettings(int cmds) {
                 System.out.println("==============请去setting界面==============");
+                PermissionSettingPage.start(MyApplication.CONTEXT, false);
             }
         }, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 ```
@@ -38,6 +39,7 @@ PermissionCompat.tryReqs(getActivity(), new PermissionCompat.PerCompatCallbackAd
             @Override
             public void goSettings(int cmds) {
                 System.out.println("==============请去setting界面==============");
+                PermissionSettingPage.start(MyApplication.CONTEXT, false);
             }
         }, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 ```
