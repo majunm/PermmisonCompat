@@ -87,7 +87,7 @@ public class PermissionCompat {
 
         void refuse(int cmds);
 
-        void other(int cmds);
+        void goSettings(int cmds);
     }
 
     public static abstract class PerCompatCallbackAdpt implements PermissionCompatCallback {
@@ -101,7 +101,7 @@ public class PermissionCompat {
         }
 
         @Override
-        public void other(int cmds) {
+        public void goSettings(int cmds) {
 
         }
     }
